@@ -31,7 +31,7 @@ Built with **LangGraph** and a local **Qwen2.5-Coder-7B** model served via **lla
 ### 1. Clone this repo
 
 ```powershell
-git clone https://github.com/your-username/local-build-agent.git
+git clone https://github.com/AshFirst/LocalBuildAgent.git
 cd local-build-agent
 ```
 
