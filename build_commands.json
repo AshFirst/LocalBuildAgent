@@ -1,0 +1,92 @@
+{
+  "compilers": {
+    "c": {
+      "name": "gcc",
+      "command": "gcc *.c -o app"
+    },
+    "cpp": {
+      "name": "g++",
+      "command": "g++ *.cpp -o app"
+    },
+    "java": {
+      "name": "javac",
+      "command": "javac *.java"
+    },
+    "kotlin": {
+      "name": "kotlinc",
+      "command": "kotlinc *.kt -include-runtime -d app.jar"
+    },
+    "python": {
+      "name": "python",
+      "command": "python -m compileall ."
+    },
+    "javascript": {
+      "name": "node",
+      "command": "node index.js"
+    },
+    "typescript": {
+      "name": "tsc",
+      "command": "npx tsc -p tsconfig.json"
+    }
+  },
+  "build_systems": {
+    "cmake": {
+      "language": "C/C++",
+      "name": "CMake",
+      "command": "cmake -S . -B build && cmake --build build"
+    },
+    "make": {
+      "language": "C/C++",
+      "name": "Make",
+      "command": "make"
+    },
+    "maven": {
+      "language": "Java",
+      "name": "Maven",
+      "command": "mvn package"
+    },
+    "gradle": {
+      "language": "Java/Kotlin",
+      "name": "Gradle",
+      "command": "gradle build",
+      "wrapper_command_windows": "gradlew.bat build",
+      "wrapper_command_posix": "./gradlew build"
+    },
+    "python-package": {
+      "language": "Python",
+      "name": "Python package",
+      "command": "python -m build"
+    },
+    "python-compileall": {
+      "language": "Python",
+      "name": "Python bytecode compile",
+      "command": "python -m compileall ."
+    },
+    "npm-build": {
+      "language": "JavaScript/TypeScript",
+      "name": "npm",
+      "command": "npm run build"
+    },
+    "pnpm-build": {
+      "language": "JavaScript/TypeScript",
+      "name": "pnpm",
+      "command": "pnpm build"
+    },
+    "yarn-build": {
+      "language": "JavaScript/TypeScript",
+      "name": "Yarn",
+      "command": "yarn build"
+    },
+    "bun-build": {
+      "language": "JavaScript/TypeScript",
+      "name": "Bun",
+      "command": "bun run build"
+    },
+    "typescript": {
+      "language": "TypeScript",
+      "name": "TypeScript compiler",
+      "command": "npx tsc -p tsconfig.json"
+    }
+  }
+}
+
